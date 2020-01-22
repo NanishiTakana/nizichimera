@@ -6,9 +6,12 @@
 </head>
 
   <body>
+
     <img id="image_place" src="image/01_head/head001.png"/>
 
     <script type="text/javascript">
+    let hdSrc = "image/01_head/head00" ;
+
      document.write("こんにちは。");
      // img 要素を取得する
      var img = document.getElementById("image_place");
@@ -16,8 +19,9 @@
      var idx = 1;
 
       // img要素のsrcに画像ファイル名を設定する
-      img.src = "image/01_head/head00" + idx + ".png";
+      img.src = hdSrc + idx + ".png";
 
+      document.write('<img src= img.src width="104" height="91" />');
 
 
     </script>
