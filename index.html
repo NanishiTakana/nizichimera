@@ -6,8 +6,28 @@
 </head>
 
   <body>
+    <img id="image_place" src="head001.png"/>
+
     <script type="text/javascript">
-      document.write("こんにちは。");
+     document.write("こんにちは。");
+     // img 要素を取得する
+     var img = document.getElementById("image_place");
+     //表示する画像番号
+     var idx = 1;
+
+    // 画像を切り替える関数
+    function changeImage() {
+      idx++;
+      if (idx > 3) {
+        idx = 1;
+      }
+
+      // img要素のsrcに画像ファイル名を設定する
+      img.src = "head00" + idx + ".png";
+    }
+
+
+
     </script>
   </body>
 </html>
